@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Honk&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import "./variables.css";
+
+html {
+  box-sizing: content-box;
+}
+
+body {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-width: var(--width, 100vw);
+  min-height: var(--height, 100vh);
+  font-family: "Bebas Neue", sans-serif;
+  font-size: var(--fs-default);
+  color: var(--cor-texto-body);
+  text-shadow: 2px 2px black;
+  background-color: var(--cor-primaria);
+  background-image: url(../assets/imagem-de-fundo.gif);
+}
+
+@media(max-width: 900px) {
+  body {
+    justify-content: space-between;
+  }
+}
